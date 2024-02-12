@@ -31,7 +31,7 @@ func readHRVData() {
             let hrvValue = sample.quantity.doubleValue(for: HKUnit(from: "ms"))
             print("HRV value: \(hrvValue)")
 
-            // 여기서부터는 HRV 데이터를 기반으로 스트레스 수치를 계산하고 처리합니다.
+            // 여기서부터는 HRV 데이터를 기반으로 스트레스 수치를 계산하고 처리?
         }
     }
 
@@ -41,8 +41,8 @@ func readHRVData() {
 
 
 func calculateStressLevel(from hrvData: [Double]) -> Double {
-    // 여기서 HRV 데이터를 기반으로 스트레스 수치를 계산하는 알고리즘을 구현합니다.
-    // 예를 들어, HRV 데이터의 평균 값을 사용하여 스트레스 수치를 계산할 수 있습니다.
+    // 여기서 HRV 데이터를 기반으로 스트레스 수치를 계산하는 알고리즘
+    // 예를 들어, HRV 데이터의 평균 값을 사용하여 스트레스 수치를 계산할 수 있습니다
     let averageHRV = hrvData.reduce(0, +) / Double(hrvData.count)
     let stressLevel = // 스트레스 수치 계산 알고리즘 적용
 
@@ -54,7 +54,7 @@ func calculateStressLevel(sdnn: Double, rmssd: Double, lfToHfRatio: Double) -> D
     // SDNN과 RMSSD가 높을수록 스트레스 수준이 낮음
     // LF/HF 비율이 높을수록 스트레스 수준이 높음
     
-    // 여기서는 간단히 SDNN과 RMSSD의 평균을 구하고, LF/HF 비율을 반영하여 스트레스 수준을 계산하는 예시입니다.
+    // 여기서는 간단히 SDNN과 RMSSD의 평균을 구하고, LF/HF 비율을 반영하여 스트레스 수준을 계산 example
     let meanHRV = (sdnn + rmssd) / 2.0
     let stressLevel = meanHRV * (1.0 + lfToHfRatio)
 
