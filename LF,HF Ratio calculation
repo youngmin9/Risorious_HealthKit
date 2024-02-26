@@ -46,3 +46,6 @@ plt.xlabel('Frequency (Hz)')
 plt.ylabel('Power')
 plt.title('Power Spectrum of RR intervals')
 plt.show()
+
+
+#LF/HF ratio를 계산하기 위해 HRV (Heart Rate Variability) raw data에서 신호 처리를 수행하는 Python 코드를 구현하려면, 주로 Fast Fourier Transform (FFT) 또는 Lomb-Scargle 주기도를 사용하여 시간 영역 데이터를 주파수 영역으로 변환해야 합니다. 이 예제에서는 numpy와 scipy 라이브러리를 사용하여 FFT를 적용하고 LF (0.04-0.15 Hz) 및 HF (0.15-0.4 Hz) 범위의 파워를 계산한 다음 LF/HF 비율을 구하는 방법을 보여줍니다.
