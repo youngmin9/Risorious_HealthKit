@@ -99,7 +99,7 @@ HRV 분석: 수집된 심박동 데이터를 분석하여 HRV를 계산합니다
 
 기술 스택 참고
 
-<img width="668" alt="Screenshot 2024-02-27 at 10 42 14 PM" src="https://github.com/youngmin9/Risorious_HealthKit/assets/93260170/31f47854-80c6-4a77-ad6d-bc6a7f46709c">
+<img width="700" alt="Screenshot 2024-02-27 at 10 41 53 PM" src="https://github.com/youngmin9/Risorious_HealthKit/assets/93260170/f7fd3b29-2765-477f-9ea1-b0bdf7e2fcbb">
 
 <img width="668" alt="Screenshot 2024-02-27 at 10 42 14 PM" src="https://github.com/youngmin9/Risorious_HealthKit/assets/93260170/667ef7b5-8963-4d0b-a06b-52c40062294f">
 
