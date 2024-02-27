@@ -97,5 +97,9 @@ HRV 분석: 수집된 심박동 데이터를 분석하여 HRV를 계산합니다
 개인화된 스트레스 수치 제공: 계산된 스트레스 수치는 사용자에게 제공됩니다. 이를 통해 사용자는 어떤 루틴이 스트레스를 유발하는지, 반대로 어떤 루틴이 스트레스를 완화하는지를 알 수 있습니다.
 
 
-스택 참고 자료
+기술 스택 참고
+
+<img width="668" alt="Screenshot 2024-02-27 at 10 42 14 PM" src="https://github.com/youngmin9/Risorious_HealthKit/assets/93260170/31f47854-80c6-4a77-ad6d-bc6a7f46709c">
+
+<img width="668" alt="Screenshot 2024-02-27 at 10 42 14 PM" src="https://github.com/youngmin9/Risorious_HealthKit/assets/93260170/667ef7b5-8963-4d0b-a06b-52c40062294f">
 
