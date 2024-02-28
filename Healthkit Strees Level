@@ -1,6 +1,36 @@
 import HealthKit
 
-let healthStore = HKHealthStore()
+class HealthKitService {
+    let healthStore = HKHealthStore()
+    
+    // 읽기 및 쓰기 권한 설정
+    let read = Set([HKCategoryType.categoryType(forIdentifier: .sleepAnalysis)!])
+    let share = Set([HKCategoryType.categoryType(forIdentifier: .sleepAnalysis)!])
+    
+    func configure() {
+        // 해당 장치가 healthkit을 지원하는지 여부
+        if HKHealthStore.isHealthDataAvailable() {
+            requestAuthorization()
+        }
+    }
+    
+    // 권한 요청 메소드
+    private func requestAuthorization() {
+        self.healthStore.requestAuthorization(toShare: share, read: read) { success, error in
+            if error != nil {
+                print(error.debugDescription)
+            }else{
+                if success {
+                    print("권한이 허락되었습니다")
+                }else{
+                    print("권한이 없습니다")
+                }
+            }
+        }
+    }
+}
+
+// 권한 확인
 
 func requestHealthKitAuthorization() {
     let healthKitTypesToRead: Set<HKObjectType> = [
@@ -14,7 +44,7 @@ func requestHealthKitAuthorization() {
     }
 }
 
-
+//심박 변이 데이터 읽어오기
 func readHRVData() {
     guard let hrvType = HKObjectType.quantityType(forIdentifier: .heartRateVariabilitySDNN) else {
         print("HRV data type is not available.")
