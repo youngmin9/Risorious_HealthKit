@@ -68,7 +68,7 @@ func readHRVData() {
     healthStore.execute(query)
 }
 
-
+//예시
 
 func calculateStressLevel(from hrvData: [Double]) -> Double {
     // 여기서 HRV 데이터를 기반으로 스트레스 수치를 계산하는 알고리즘
