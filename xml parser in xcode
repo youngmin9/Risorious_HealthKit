@@ -8,7 +8,6 @@ Xcode에서 새 Swift 프로젝트를 생성합니다.
 Podfile을 열고 다음 줄을 추가하여 Charts 라이브러리를 포함시킵니다:
 
 ruby
-Copy code
 pod 'Charts'
 터미널에서 pod install을 실행하여 라이브러리를 설치하고, 이후 .xcworkspace 파일로 프로젝트를 엽니다.
 
@@ -16,7 +15,6 @@ pod 'Charts'
 HRVParserDelegate.swift 파일을 생성하고, XMLParserDelegate를 구현하여 HRV 데이터를 파싱합니다.
 
 swift
-Copy code
 import Foundation
 
 class HRVParserDelegate: NSObject, XMLParserDelegate {
@@ -46,7 +44,6 @@ class HRVParserDelegate: NSObject, XMLParserDelegate {
 ViewController.swift에 Charts를 사용하여 파싱된 데이터를 그래프로 그리는 코드를 추가합니다.
 
 swift
-Copy code
 import UIKit
 import Charts
 
